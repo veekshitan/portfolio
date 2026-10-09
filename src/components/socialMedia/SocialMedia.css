@@ -25,6 +25,11 @@
   user-select: none;
   width: 2.6rem;
   margin-bottom: 10px;
+  transition: transform 0.25s ease;
+}
+
+.icon-button:hover i {
+  transform: translateY(-3px);
 }
 
 /* .facebook i {

@@ -5,12 +5,16 @@ import { Fade } from "react-reveal";
 
 export default function GithubRepoCard({ repo, theme }) {
   function openRepoinNewTab(url) {
+    if (!url) return;
     var win = window.open(url, "_blank");
-    win.focus();
+    if (win) win.focus();
   }
 
   return (
-    <div className="repo-card-div" style={{ backgroundColor: theme.highlight }}>
+    <div
+      className={`repo-card-div${repo.url ? "" : " repo-card-no-link"}`}
+      style={{ backgroundColor: theme.highlight }}
+    >
       <Fade bottom duration={2000} distance="40px">
         <div key={repo.id} onClick={() => openRepoinNewTab(repo.url)}>
           <div className="repo-name-div">
@@ -39,7 +43,7 @@ export default function GithubRepoCard({ repo, theme }) {
               className="repo-creation-date subTitle"
               style={{ color: theme.secondaryText }}
             >
-              Created on {repo.createdAt.split("T")[0]}
+              {repo.createdAt.split("T")[0]}
             </p>
             <ProjectLanguages
               className="repo-languages"

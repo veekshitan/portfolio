@@ -2,15 +2,19 @@
   "data": [
     {
       "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      "name": "My CV application",
+      "name": "MyCV – Resume Builder",
       "createdAt": "June 2023",
       "url": "https://github.com/veekshitan/resume-builder",
-      "description": "🔥Developed a resume builder website that leverages user profiles to automatically fill up templates for custom, downloadable resumes. The website stores the information in a noSQL database (MongoDB) to allow users to fill it out in the resume of theirchoice",
+      "description": "🔥 Built and deployed a full-stack resume builder with a REST API backend (Node.js + Express), profile-driven template autofill, PDF export, and persistent user data in MongoDB.",
       "isFork": false,
       "languages": [
         {
           "name": "React",
           "iconifyClass": "logos-react"
+        },
+        {
+          "name": "Node.js",
+          "iconifyClass": "logos-nodejs-icon"
         },
         {
           "name": "Express",
@@ -46,23 +50,23 @@
     },
     {
       "id": "R_kgDOG0_8uQ",
-      "name": "Animal image classification",
+      "name": "Animal Image Classification",
       "createdAt": "April 2023",
       "url": "",
-      "description": "🌀 Developed VGG-16 (0.93 accuracy) and ResNet50 models (0.92 accuracy) for precise animal image classification among 26,000 images to classify across 10 categories. Compared the obtained results with the Non-CNN gradient booster classifier (machine learning) model which produced an accuracy of 0.85.",
+      "description": "🌀 Trained and compared VGG-16 (0.93 acc.) and ResNet50 (0.92 acc.) CNNs on 26,000 images across 10 categories; benchmarked against a gradient boosting baseline (0.85 acc.), a 9%+ lift with deep learning.",
       "isFork": false,
       "languages": [
+        {
+          "name": "TensorFlow",
+          "iconifyClass": "logos-tensorflow"
+        },
         {
           "name": "Keras",
           "iconifyClass": "simple-icons:keras"
         },
         {
-          "name": "Numpy",
-          "iconifyClass": "logos-numpy"
-        },
-        {
           "name": "Python",
-          "iconifyClass": "ion-logo-python"
+          "iconifyClass": "logos-python"
         }
       ]
     },

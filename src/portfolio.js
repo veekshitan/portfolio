@@ -7,6 +7,13 @@ const settings = {
 
 //SEO Related settings
 const seo = {
+  title: "Veekshita Naidu | Senior Software Engineer",
+  description:
+    "Senior Software Engineer specialising in Python and Django backends, scalable REST APIs, data pipelines and applied machine learning.",
+  og: {
+    title: "Veekshita Naidu Portfolio",
+    type: "website",
+  },
   // title: "Ashutosh's Portfolio",
   // description:
   //   "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
@@ -22,10 +29,10 @@ const greeting = {
   title: "Balla Veekshita Naidu",
   logo_name: "VeekshitaNaidu",
   nickname: "veekshita",
+  role: "Senior Software Engineer @ Dvara E-Registry",
   subTitle:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
-  resumeLink:
-    "https://drive.google.com/file/d/1mJyzlZ0pvkD0tPA2RXzG4c0nRUiU-bvs/view?usp=sharing",
+    "Backend engineer who loves building scalable, production-grade systems — from REST APIs and database design to data pipelines and applied machine learning.",
+  resumeLink: `${process.env.PUBLIC_URL}/Veekshita_Naidu_Resume.pdf`,
   // portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
   githubProfile: "https://github.com/veekshitan/",
 };
@@ -60,7 +67,7 @@ const socialMediaLinks = [
   // },
   {
     name: "Gmail",
-    link: "mailto:ballaveekshitanaidu07@gmail.com",
+    link: "mailto:naiduballaveekshita@gmail.com",
     fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
     backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
   },
@@ -87,17 +94,114 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "AI & ML",
+      title: "Backend Engineering",
+      fileName: "FullStackImg",
+      skills: [
+        "⚡ Designing and owning production Python services with Django & Django REST Framework — REST APIs, database design, background processing and deployment",
+        "⚡ Optimizing PostgreSQL-backed APIs through indexing, query optimization and restructured database access patterns",
+        "⚡ Modelling rule-based workflows like configurable transaction approval engines and graph-based route optimization",
+        "⚡ Building end-to-end products with React frontends, including offline sync and GPS-guided data collection",
+      ],
+      softwareSkills: [
+        {
+          skillName: "Python",
+          fontAwesomeClassname: "logos-python",
+          style: {
+            backgroundColor: "transparent",
+          },
+        },
+        {
+          skillName: "Django",
+          fontAwesomeClassname: "simple-icons:django",
+          style: {
+            color: "#092E20",
+          },
+        },
+        {
+          skillName: "PostgreSQL",
+          fontAwesomeClassname: "simple-icons:postgresql",
+          style: {
+            color: "#336791",
+          },
+        },
+        {
+          skillName: "Node.js",
+          fontAwesomeClassname: "logos-nodejs-icon",
+          style: {
+            backgroundColor: "transparent",
+          },
+        },
+        {
+          skillName: "Express",
+          fontAwesomeClassname: "simple-icons:express",
+          style: {
+            color: "#000000",
+          },
+        },
+        {
+          skillName: "MySQL",
+          fontAwesomeClassname: "simple-icons:mysql",
+          style: {
+            color: "#4479A1",
+          },
+        },
+        {
+          skillName: "MongoDB",
+          fontAwesomeClassname: "simple-icons:mongodb",
+          style: {
+            color: "#47A248",
+          },
+        },
+        {
+          skillName: "ReactJS",
+          fontAwesomeClassname: "simple-icons:react",
+          style: {
+            color: "#61DAFB",
+          },
+        },
+        {
+          skillName: "JavaScript",
+          fontAwesomeClassname: "simple-icons:javascript",
+          style: {
+            backgroundColor: "#000000",
+            color: "#F7DF1E",
+          },
+        },
+      ],
+    },
+    {
+      title: "AI, ML & Geospatial",
       fileName: "DataScienceImg",
       skills: [
-        "⚡ Developing highly scalable production ready models for various deeplearning and statistical use cases",
-        "⚡ Experience of working with Computer Vision and NLP projects",
-        "⚡  Complex quantitative modelling for dynamic forecasting and classification analysis",
+        "⚡ Building geospatial scoring engines and event-detection pipelines on multi-temporal Sentinel satellite data and weather APIs at 10m resolution",
+        "⚡ Training computer-vision models (YOLOv5, Faster R-CNN, ResNet, EfficientNet) for image-based classification and detection",
+        "⚡ Shipping voice-enabled RAG applications with Whisper ASR, multilingual pipelines and FAISS / Pinecone vector search",
       ],
       softwareSkills: [
         {
           skillName: "Tensorflow",
           fontAwesomeClassname: "logos-tensorflow",
+          style: {
+            backgroundColor: "transparent",
+          },
+        },
+        {
+          skillName: "Scikit-learn",
+          fontAwesomeClassname: "simple-icons:scikitlearn",
+          style: {
+            color: "#F7931E",
+          },
+        },
+        {
+          skillName: "Pandas",
+          fontAwesomeClassname: "simple-icons:pandas",
+          style: {
+            color: "#150458",
+          },
+        },
+        {
+          skillName: "Numpy",
+          fontAwesomeClassname: "logos-numpy",
           style: {
             backgroundColor: "transparent",
           },
@@ -110,128 +214,45 @@ const skills = {
             color: "#D00000",
           },
         },
+      ],
+    },
+    {
+      title: "Cloud & DevOps",
+      fileName: "CloudInfraImg",
+      skills: [
+        "⚡ Deploying and running backend services on AWS",
+        "⚡ Day-to-day engineering on Linux with Git-based workflows",
+        "⚡ Designing for scalability, caching and concurrency in production systems",
+      ],
+      softwareSkills: [
         {
-          skillName: "Numpy",
-          fontAwesomeClassname: "logos-numpy",
+          skillName: "AWS",
+          fontAwesomeClassname: "logos-aws",
           style: {
             backgroundColor: "transparent",
           },
         },
         {
-          skillName: "Python",
-          fontAwesomeClassname: "ion-logo-python",
+          skillName: "Linux",
+          fontAwesomeClassname: "simple-icons:linux",
           style: {
-            backgroundColor: "transparent",
-            color: "#3776AB",
-          },
-        },
-      ],
-    },
-    {
-      title: "Full Stack Development",
-      fileName: "FullStackImg",
-      skills: [
-        "⚡ Building responsive websites front end using React and React-Redux",
-        "⚡ Creating application backend in Node, Express, Flask and Django",
-        "⚡ Integrating the applications with both relational and non-relational databases",
-      ],
-      softwareSkills: [
-        {
-          skillName: "HTML5",
-          fontAwesomeClassname: "simple-icons:html5",
-          style: {
-            color: "#E34F26",
+            color: "#000000",
           },
         },
         {
-          skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
+          skillName: "Git",
+          fontAwesomeClassname: "simple-icons:git",
           style: {
-            color: "#1572B6",
+            color: "#F05032",
           },
         },
         {
-          skillName: "JavaScript",
-          fontAwesomeClassname: "simple-icons:javascript",
+          skillName: "GitHub",
+          fontAwesomeClassname: "simple-icons:github",
           style: {
-            backgroundColor: "#000000",
-            color: "#F7DF1E",
+            color: "#181717",
           },
         },
-        {
-          skillName: "ReactJS",
-          fontAwesomeClassname: "simple-icons:react",
-          style: {
-            color: "#61DAFB",
-          },
-        },
-        {
-          skillName: "Express",
-          fontAwesomeClassname: "simple-icons:express",
-          style: {
-            color: "#339933",
-          },
-        },
-        {
-          skillName: "NPM",
-          fontAwesomeClassname: "simple-icons:npm",
-          style: {
-            color: "#CB3837",
-          },
-        },
-        {
-          skillName: "mySQL",
-          fontAwesomeClassname: "simple-icons:mysql",
-          style: {
-            color: "#2C8EBB",
-          },
-        },
-        {
-          skillName: "MongoDB",
-          fontAwesomeClassname: "simple-icons:mongodb",
-          style: {
-            color: "#3FA037",
-          },
-        },
-      ],
-    },
-
-    {
-      title: "UI/UX Design",
-      fileName: "DesignImg",
-      skills: [
-        "⚡ Designing highly attractive user interface for mobile and web applications",
-        "⚡ Creating the flow of application functionalities to optimize user experience",
-      ],
-      softwareSkills: [
-        {
-          skillName: "Adobe XD",
-          fontAwesomeClassname: "simple-icons:adobexd",
-          style: {
-            color: "#FF2BC2",
-          },
-        },
-        {
-          skillName: "Figma",
-          fontAwesomeClassname: "simple-icons:figma",
-          style: {
-            color: "#F24E1E",
-          },
-        },
-        // {
-        //   skillName: "Adobe Illustrator",
-        //   fontAwesomeClassname: "simple-icons:adobeillustrator",
-        //   style: {
-        //     color: "#FF7C00",
-        //   },
-        // },
-        // {
-        //   skillName: "Inkscape",
-        //   fontAwesomeClassname: "simple-icons:inkscape",
-        //   style: {
-        //     color: "#000000",
-        //   },
-        // },
       ],
     },
   ],
@@ -277,7 +298,7 @@ const degrees = {
       alt_name: "IITDh",
       duration: "2020 - 2024",
       descriptions: [
-        "⚡CPI : 9.06/10",
+        "⚡ CGPA: 9.09 / 10",
         // "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
         // "⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.",
       ],
@@ -425,76 +446,101 @@ const certifications = {
   ],
 };
 
+// Achievements (shown on the Education page)
+const achievements = {
+  title: "Achievements",
+  list: [
+    {
+      icon: "🏆",
+      title: "Trailblazer Award",
+      description: "For outstanding contributions and impact at Dvara E-Registry.",
+    },
+    {
+      icon: "🚀",
+      title: "Top Performer Award",
+      description: "For consistently delivering high-impact engineering outcomes.",
+    },
+    {
+      icon: "💡",
+      title: "700+ problems solved",
+      description: "Algorithmic problems across LeetCode and GeeksforGeeks.",
+    },
+    {
+      icon: "🥇",
+      title: "4th place, Inter IIT",
+      description: "Secured 4th position in the Inter IIT Case Study Competition.",
+    },
+  ],
+};
+
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Internship and Volunteership",
+  subtitle: "Work, Internships and Leadership",
   description:
-    "I have worked with few evolving startups as a Web developer, UI desginer and ML engineer. I have also worked with some well established companies mostly as AI Developer. I love organising and managing events and that is why I am also involved with many communities and institute clubs as a representative.",
+    "I'm a backend-focused software engineer with experience across API design, database performance, workflow engines, geospatial data and applied ML. I enjoy owning systems end to end — from design through deployment — and mentoring the engineers I work with.",
   header_image_path: "career_progress.svg",
   sections: [
-    // {
-    // title: "Work",
-    // work: true,
-    // experiences: [
-    //   {
-    //     title: "Associate AI Engineer",
-    //     company: "Legato Health Technology",
-    //     company_url: "https://legatohealthtech.com/",
-    //     logo_path: "legato_logo.png",
-    //     duration: "June 2020 - Aug 2021",
-    //     location: "Hyderabad, Telangana",
-    //     description:
-    //       "I am working on automating healthcare products. The projects involve automation for process improvements and for significantly enhancing the profits. I am currently working on Cancer Survival and Reoccurence Prediction. Our goal is to make AI system which scales and removes doctor dependency as much as possible.",
-    //     color: "#0879bf",
-    //   },
-    //   {
-    //     title: "Android and ML Developer",
-    //     company: "Muffito Incorporation",
-    //     company_url: "https://www.linkedin.com/company/muffito-inc/about/",
-    //     logo_path: "muffito_logo.png",
-    //     duration: "May 2018 - Oct 2018",
-    //     location: "Pune, Maharashtra",
-    //     description:
-    //       "I have created complete Android Application for locating Pub, Bar and beverage shops around you. I have also worked on implementation of algorithms for Face Detection, Text extraction from Image. I was involved in a team for creating complete software architecure of mobile and web application as well as admin panel for company.",
-    //     color: "#9b1578",
-    //   },
-    //   {
-    //     title: "Android Developer",
-    //     company: "FreeCopy Pvt. Ltd.",
-    //     company_url: "https://www.linkedin.com/company/freecopy/about/",
-    //     logo_path: "freecopy_logo.png",
-    //     duration: "Nov 2017 - Dec 2017",
-    //     location: "Ahmedabad, Gujarat",
-    //     description:
-    //       "FreeCopy is the Start up from Indian Institute of Management, Ahmedabad. I have changed the integration of the whole app from Google to Firebase. I learnt the efﬁcient ways of Data communications like Retroﬁt, Eventbus etc. I experienced the real time start up. I learnt the Design thinking of UI on perspective of People.",
-    //     color: "#fc1f20",
-    //   },
-    // ],
-    // },
+    {
+      title: "Work",
+      work: true,
+      experiences: [
+        {
+          title: "Senior Software Engineer",
+          company: "Dvara E-Registry",
+          company_url: "https://www.dvara.com/",
+          logo_path: "dvara_logo.png",
+          duration: "May 2024 - Present",
+          roles: [
+            { title: "Senior Software Engineer", duration: "May 2025 - Present" },
+            { title: "Software Engineer", duration: "May 2024 - May 2025" },
+          ],
+          location: "Hyderabad, India",
+          tech: ["Python", "Django", "PostgreSQL", "AWS", "React"],
+          description: [
+            "Engineered and owned production Python backend services for a crop-insurance platform, covering REST APIs, database design, background processing, and deployment.",
+            "Designed and deployed a geospatial scoring engine for multi-temporal satellite datasets, building backend workflows for field-level risk scoring and production API integration.",
+            "Optimized Django REST APIs using database indexing and query optimization, profiling and restructuring database access patterns for production endpoints.",
+            "Designed and implemented a configurable transaction approval engine in Django, modeling rule-based workflows and integrating them into the transaction processing pipeline.",
+            "Led development of an end-to-end React + Django farm digitization platform with GPS-guided data collection, geospatial validation, and offline synchronization; mentored 2 software engineering interns.",
+            "Engineered a route optimization system for field-agent collections using graph-based scheduling, integrating route generation into the collection workflow.",
+            "Designed event-detection pipelines integrating Sentinel satellite data and weather APIs to compute drought and flood timelines at 10m geospatial resolution.",
+            "Developed an image-based crop damage assessment system using YOLOv5, Faster R-CNN, ResNet, and EfficientNet, achieving ~90% accuracy on field-collected imagery.",
+          ],
+          color: "#0879bf",
+        },
+      ],
+    },
     {
       title: "Internships",
       experiences: [
         {
-          title: "AI ML Intern",
-          company: "Dvara Solutions.",
+          title: "AI/ML Intern",
+          company: "Dvara Solutions",
           company_url: "https://dvarasolutions.com/",
           logo_path: "dvara_logo.png",
           duration: "Aug 2023 - Jan 2024",
           location: "Dharwad, India",
-          description:
-            "Developed a cutting-edge real-time voice-enabled AI chatbot assistant dedicated to addressing user queries within the domain of financial documents. Leveraging cutting-edge technologies, we implemented ChromaDB to efficiently manage document embeddings, ensuring optimal system performance. PostgreSQL was employed for robust query administration, with plans to introduce multi-user support in the near future, enhancing the versatility of the system. The integration of OpenAI's Text Ada-002 model significantly augmented the system's comprehension capabilities by generating advanced document embeddings. Additionally, we incorporated OpenAI's Whisper for English and AI for Bharat for regional languages to deliver precise Automatic Speech Recognition (ASR) for seamless multilingual interactions",
+          tech: ["Python", "LLMs", "Vector DBs", "PostgreSQL", "ASR"],
+          description: [
+            "Built a real-time voice-enabled RAG application for querying domain-specific financial documents, integrating Whisper for ASR and Pinecone/FAISS for semantic vector search.",
+            "Designed a document ingestion and embedding-management pipeline using vector databases and PostgreSQL metadata storage, supporting incremental updates and retrieval workflows.",
+            "Implemented multilingual ASR pipelines for regional Indian languages using transcription and translation models, enabling cross-language voice interactions.",
+          ],
           color: "#000000",
         },
         {
-          title: "Web development intern",
+          title: "Web Development Intern",
           company: "My Endeavour",
           company_url: "https://www.linkedin.com/company/myendeavour/",
           logo_path: "my_medha.jpg",
           duration: "May 2023 - July 2023",
           location: "Remote",
-          description:
-            "Collaborating closely with senior engineers, I played a pivotal role in the strategic planning and implementation of the dynamic dashboard for our website. Demonstrating creativity and technical prowess, I ideated and developed two innovative features using React and MySQL, effectively elevating the report generation process. This implementation led to a notable 2% increase in client acquisition, showcasing the tangible impact of these enhancements. Additionally, my proficiency in debugging and addressing both frontend and backend issues using React and MySQL proved instrumental in optimizing the overall performance and code quality of the project",
+          tech: ["React", "MySQL"],
+          description: [
+            "Designed and built two features for the reporting dashboard using React and MySQL, improving the report generation process and contributing to a 2% increase in client acquisition.",
+            "Debugged frontend and backend issues across the stack, improving overall performance and code quality.",
+          ],
           color: "#ee3c26",
         },
       ],
@@ -566,7 +612,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.",
+    "A mix of full-stack products and machine-learning experiments — from a MongoDB-backed resume builder to CNN benchmarks on 26,000 images. Most of my day-to-day work lives in production systems at Dvara E-Registry.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -628,7 +674,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "contact_me.svg",
     description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with Software development, Web development, ML, and AI.",
+      "Whether it's backend architecture, geospatial data pipelines or applied ML, I'm always happy to talk shop. Drop me a message on LinkedIn or email and I'll get back to you within 24 hours.",
   },
   blogSection: {
     // title: "Blogs",
@@ -638,16 +684,14 @@ const contactPageData = {
     // avatar_image_path: "blogs_image.svg",
   },
   addressSection: {
-    title: "Address",
-    subtitle:
-      "Indian Institute of Technology Dharwad (Permanent Campus), Chikka Maligwad, Dharwad, Karnataka, India - 580007",
-    locality: "Dharwad",
+    title: "Location",
+    subtitle: "Hyderabad, Telangana, India",
+    locality: "Hyderabad",
     country: "IN",
-    region: "Karnataka",
-    postalCode: "580007",
+    region: "Telangana",
     // streetAddress: "Ambavadi vas",
     avatar_image_path: "undraw_my_location_re_r52x.svg",
-    location_map_link: "https://goo.gl/maps/MpMqtRZytFchMkZ76",
+    location_map_link: "https://maps.google.com/?q=Hyderabad,Telangana",
   },
   phoneSection: {
     title: "",
@@ -664,6 +708,7 @@ export {
   competitiveSites,
   degrees,
   certifications,
+  achievements,
   experience,
   projectsHeader,
   publicationsHeader,

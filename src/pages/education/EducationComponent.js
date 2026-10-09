@@ -6,8 +6,7 @@ import Educations from "../../containers/education/Educations";
 import Certifications from "../../containers/certifications/Certifications";
 import CompetitiveSites from "../../components/competitiveSites/CompetitiveSites";
 import EducationImg from "./EducationImg";
-import { competitiveSites } from "../../portfolio";
-import { certifications } from "../../portfolio";
+import { competitiveSites, certifications, achievements } from "../../portfolio";
 import "./EducationComponent.css";
 import { Fade } from "react-reveal";
 
@@ -32,12 +31,46 @@ class Education extends Component {
                   Education
                 </h1>
                 <h3 className="heading-sub-text" style={{ color: theme.text }}>
-                  Basic Qualification and Certifcations
+                  Achievements and Qualifications
                 </h3>
                 <CompetitiveSites logos={competitiveSites.competitiveSites} />
               </div>
             </div>
           </Fade>
+          {achievements.list.length > 0 && (
+            <div className="achievements-section">
+              <Fade bottom duration={2000} distance="20px">
+                <h1
+                  className="achievements-header"
+                  style={{ color: theme.text }}
+                >
+                  {achievements.title}
+                </h1>
+              </Fade>
+              <div className="achievements-grid">
+                {achievements.list.map((item) => (
+                  <Fade bottom duration={1500} distance="20px" key={item.title}>
+                    <div
+                      className="achievement-tile"
+                      style={{
+                        backgroundColor: theme.highlight,
+                        color: theme.text,
+                      }}
+                    >
+                      <span className="achievement-tile-icon">{item.icon}</span>
+                      <h3 className="achievement-tile-title">{item.title}</h3>
+                      <p
+                        className="achievement-tile-desc"
+                        style={{ color: theme.secondaryText }}
+                      >
+                        {item.description}
+                      </p>
+                    </div>
+                  </Fade>
+                ))}
+              </div>
+            </div>
+          )}
           <Educations theme={this.props.theme} />
           {certifications.certifications.length > 0 ? (
             <Certifications theme={this.props.theme} />

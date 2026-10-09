@@ -4,9 +4,15 @@
   padding: 2rem;
   cursor: pointer;
   flex: 1 1 25%;
+  border-radius: 14px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .repo-card-div:hover {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
+  transform: translateY(-4px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 30px -10px;
+}
+.repo-card-no-link {
+  cursor: default;
 }
 
 .repo-stats {
@@ -70,7 +76,8 @@
   text-align: left;
   display: -webkit-box;
   font-family: "Google Sans Regular";
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 4;
+  line-height: 1.5;
   -webkit-box-orient: vertical;
   margin-top: 0.8rem;
 }

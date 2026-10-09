@@ -43,9 +43,18 @@
   font-family: "Google Sans Bold Italic";
 }
 
+.greeting-role {
+  display: inline-block;
+  font-family: "Google Sans Medium";
+  font-size: 18px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  margin: 10px 0 0 0;
+}
+
 .greeting-text-p {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 26px;
+  line-height: 38px;
   margin-right: 40px;
   font-family: "Google Sans Medium";
 }
@@ -84,6 +93,12 @@
   }
   .greeting-nickname {
     font-size: 25px;
+    text-align: center;
+  }
+  .greeting-role {
+    display: table;
+    margin: 10px auto 0 auto;
+    font-size: 14px;
     text-align: center;
   }
   .greeting-text-p {
