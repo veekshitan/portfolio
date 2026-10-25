@@ -41,7 +41,6 @@ const socialMediaLinks = [
   /* Your Social Media Link */
   // github: "https://github.com/ashutosh1919",
   // linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
-  // gmail: "ashutoshhathidara98@gmail.com",
   // gitlab: "https://gitlab.com/ashutoshhathidara98",
   // facebook: "https://www.facebook.com/laymanbrother.19/",
   // twitter: "https://twitter.com/ashutosh_1919",
@@ -91,168 +90,81 @@ const socialMediaLinks = [
   // },
 ];
 
+const skill = (
+  skillName,
+  fontAwesomeClassname,
+  style = { backgroundColor: "transparent" }
+) => ({
+  skillName,
+  fontAwesomeClassname,
+  style,
+});
+
 const skills = {
   data: [
     {
       title: "Backend Engineering",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Designing and owning production Python services with Django & Django REST Framework — REST APIs, database design, background processing and deployment",
-        "⚡ Optimizing PostgreSQL-backed APIs through indexing, query optimization and restructured database access patterns",
-        "⚡ Modelling rule-based workflows like configurable transaction approval engines and graph-based route optimization",
-        "⚡ Building end-to-end products with React frontends, including offline sync and GPS-guided data collection",
+        "⚡ Building production REST APIs and microservices with Django, Django REST Framework, FastAPI and Flask",
+        "⚡ PostgreSQL data modelling, indexing, query optimization, caching and concurrency-safe designs for shared, high-contention data",
+        "⚡ Asynchronous processing with Celery — multi-stage task orchestration, configurable retries and failure isolation for batch workloads",
+        "⚡ Parallel data pipelines and full-stack products with React frontends",
       ],
       softwareSkills: [
-        {
-          skillName: "Python",
-          fontAwesomeClassname: "logos-python",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
-        {
-          skillName: "Django",
-          fontAwesomeClassname: "simple-icons:django",
-          style: {
-            color: "#092E20",
-          },
-        },
-        {
-          skillName: "PostgreSQL",
-          fontAwesomeClassname: "simple-icons:postgresql",
-          style: {
-            color: "#336791",
-          },
-        },
-        {
-          skillName: "Node.js",
-          fontAwesomeClassname: "logos-nodejs-icon",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
-        {
-          skillName: "Express",
-          fontAwesomeClassname: "simple-icons:express",
-          style: {
-            color: "#000000",
-          },
-        },
-        {
-          skillName: "MySQL",
-          fontAwesomeClassname: "simple-icons:mysql",
-          style: {
-            color: "#4479A1",
-          },
-        },
-        {
-          skillName: "MongoDB",
-          fontAwesomeClassname: "simple-icons:mongodb",
-          style: {
-            color: "#47A248",
-          },
-        },
-        {
-          skillName: "ReactJS",
-          fontAwesomeClassname: "simple-icons:react",
-          style: {
-            color: "#61DAFB",
-          },
-        },
-        {
-          skillName: "JavaScript",
-          fontAwesomeClassname: "simple-icons:javascript",
-          style: {
-            backgroundColor: "#000000",
-            color: "#F7DF1E",
-          },
-        },
+        skill("Python", "logos-python"),
+        skill("Django", "simple-icons:django", { color: "#092E20" }),
+        skill("FastAPI", "simple-icons:fastapi", { color: "#009688" }),
+        skill("Flask", "simple-icons:flask", { color: "#000000" }),
+        skill("Celery", "simple-icons:celery", { color: "#37814A" }),
+        skill("PostgreSQL", "simple-icons:postgresql", { color: "#336791" }),
+        skill("MySQL", "simple-icons:mysql", { color: "#4479A1" }),
+        skill("MongoDB", "simple-icons:mongodb", { color: "#47A248" }),
+        skill("Node.js", "logos-nodejs-icon"),
+        skill("Express", "simple-icons:express", { color: "#000000" }),
+        skill("ReactJS", "simple-icons:react", { color: "#61DAFB" }),
+        skill("JavaScript", "simple-icons:javascript", {
+          backgroundColor: "#000000",
+          color: "#F7DF1E",
+        }),
+        skill("Java", "logos-java"),
+        skill("C++", "logos-c-plusplus"),
       ],
     },
     {
-      title: "AI, ML & Geospatial",
+      title: "AI/ML & GenAI",
       fileName: "DataScienceImg",
       skills: [
-        "⚡ Building geospatial scoring engines and event-detection pipelines on multi-temporal Sentinel satellite data and weather APIs at 10m resolution",
-        "⚡ Training computer-vision models (YOLOv5, Faster R-CNN, ResNet, EfficientNet) for image-based classification and detection",
-        "⚡ Shipping voice-enabled RAG applications with Whisper ASR, multilingual pipelines and FAISS / Pinecone vector search",
+        "⚡ Building RAG applications and LLM workflows with LangChain, LangGraph and FAISS / Pinecone vector search",
+        "⚡ Computer vision with YOLOv5, Faster R-CNN, ResNet and EfficientNet for image classification and object detection",
+        "⚡ Voice interfaces with Whisper ASR and multilingual transcription and translation pipelines",
+        "⚡ Building annotation tooling and ground-truth datasets for training models",
       ],
       softwareSkills: [
-        {
-          skillName: "Tensorflow",
-          fontAwesomeClassname: "logos-tensorflow",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
-        {
-          skillName: "Scikit-learn",
-          fontAwesomeClassname: "simple-icons:scikitlearn",
-          style: {
-            color: "#F7931E",
-          },
-        },
-        {
-          skillName: "Pandas",
-          fontAwesomeClassname: "simple-icons:pandas",
-          style: {
-            color: "#150458",
-          },
-        },
-        {
-          skillName: "Numpy",
-          fontAwesomeClassname: "logos-numpy",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
-        {
-          skillName: "Keras",
-          fontAwesomeClassname: "simple-icons:keras",
-          style: {
-            backgroundColor: "white",
-            color: "#D00000",
-          },
-        },
+        skill("LangChain", "simple-icons:langchain", { color: "#1C3C3C" }),
+        skill("Tensorflow", "logos-tensorflow"),
+        skill("Scikit-learn", "simple-icons:scikitlearn", { color: "#F7931E" }),
+        skill("Pandas", "simple-icons:pandas", { color: "#150458" }),
+        skill("Numpy", "logos-numpy"),
+        skill("Keras", "simple-icons:keras", {
+          backgroundColor: "white",
+          color: "#D00000",
+        }),
       ],
     },
     {
       title: "Cloud & DevOps",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Deploying and running backend services on AWS",
+        "⚡ Deploying and running backend services on AWS, including S3-backed storage",
         "⚡ Day-to-day engineering on Linux with Git-based workflows",
-        "⚡ Designing for scalability, caching and concurrency in production systems",
+        "⚡ Designing for scalability, reliability and concurrency in production systems",
       ],
       softwareSkills: [
-        {
-          skillName: "AWS",
-          fontAwesomeClassname: "logos-aws",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
-        {
-          skillName: "Linux",
-          fontAwesomeClassname: "simple-icons:linux",
-          style: {
-            color: "#000000",
-          },
-        },
-        {
-          skillName: "Git",
-          fontAwesomeClassname: "simple-icons:git",
-          style: {
-            color: "#F05032",
-          },
-        },
-        {
-          skillName: "GitHub",
-          fontAwesomeClassname: "simple-icons:github",
-          style: {
-            color: "#181717",
-          },
-        },
+        skill("AWS", "logos-aws"),
+        skill("Linux", "simple-icons:linux", { color: "#000000" }),
+        skill("Git", "simple-icons:git", { color: "#F05032" }),
+        skill("GitHub", "simple-icons:github", { color: "#181717" }),
       ],
     },
   ],
@@ -311,7 +223,7 @@ const degrees = {
       alt_name: "sri_logo.png",
       duration: "2018 - 2020",
       descriptions: [
-        "⚡CGPA: 9.88/10",
+        "⚡ CGPA: 10/10",
         //   "⚡ Apart from this, I have also done research assistantship. As part of it, I have worked on creating new algorithms in Graph ML and Network Science.",
         //   "⚡ During my time at university, I was also associated with multimedia department. As part of it, I have worked on some documentry films and interviews.",
       ],
@@ -453,22 +365,19 @@ const achievements = {
     {
       icon: "🏆",
       title: "Trailblazer Award",
-      description: "For outstanding contributions and impact at Dvara E-Registry.",
+      description:
+        "For outstanding contributions and impact at Dvara E-Registry.",
     },
     {
       icon: "🚀",
       title: "Top Performer Award",
-      description: "For consistently delivering high-impact engineering outcomes.",
+      description:
+        "For consistently delivering high-impact engineering outcomes.",
     },
     {
       icon: "💡",
       title: "700+ problems solved",
       description: "Algorithmic problems across LeetCode and GeeksforGeeks.",
-    },
-    {
-      icon: "🥇",
-      title: "4th place, Inter IIT",
-      description: "Secured 4th position in the Inter IIT Case Study Competition.",
     },
   ],
 };
@@ -478,7 +387,7 @@ const experience = {
   title: "Experience",
   subtitle: "Work, Internships and Leadership",
   description:
-    "I'm a backend-focused software engineer with experience across API design, database performance, workflow engines, geospatial data and applied ML. I enjoy owning systems end to end — from design through deployment — and mentoring the engineers I work with.",
+    "I'm a backend-focused software engineer with experience across API design, database performance, asynchronous workflows, data pipelines and applied ML. I enjoy owning systems end to end — from design through deployment — and mentoring the engineers I work with.",
   header_image_path: "career_progress.svg",
   sections: [
     {
@@ -492,20 +401,31 @@ const experience = {
           logo_path: "dvara_logo.png",
           duration: "May 2024 - Present",
           roles: [
-            { title: "Senior Software Engineer", duration: "May 2025 - Present" },
+            {
+              title: "Senior Software Engineer",
+              duration: "May 2025 - Present",
+            },
             { title: "Software Engineer", duration: "May 2024 - May 2025" },
           ],
           location: "Hyderabad, India",
-          tech: ["Python", "Django", "PostgreSQL", "AWS", "React"],
+          tech: [
+            "Python",
+            "Django",
+            "FastAPI",
+            "Celery",
+            "PostgreSQL",
+            "AWS",
+            "React",
+          ],
           description: [
-            "Engineered and owned production Python backend services for a crop-insurance platform, covering REST APIs, database design, background processing, and deployment.",
-            "Designed and deployed a geospatial scoring engine for multi-temporal satellite datasets, building backend workflows for field-level risk scoring and production API integration.",
-            "Optimized Django REST APIs using database indexing and query optimization, profiling and restructuring database access patterns for production endpoints.",
-            "Designed and implemented a configurable transaction approval engine in Django, modeling rule-based workflows and integrating them into the transaction processing pipeline.",
-            "Led development of an end-to-end React + Django farm digitization platform with GPS-guided data collection, geospatial validation, and offline synchronization; mentored 2 software engineering interns.",
-            "Engineered a route optimization system for field-agent collections using graph-based scheduling, integrating route generation into the collection workflow.",
-            "Designed event-detection pipelines integrating Sentinel satellite data and weather APIs to compute drought and flood timelines at 10m geospatial resolution.",
-            "Developed an image-based crop damage assessment system using YOLOv5, Faster R-CNN, ResNet, and EfficientNet, achieving ~90% accuracy on field-collected imagery.",
+            "Owned production backend services for a crop-insurance platform, covering REST API design, PostgreSQL data modelling, asynchronous processing, and AWS deployments.",
+            "Built a multi-stage transaction reconciliation and approval workflow in Django, processing ~10K transactions and repayments per month and reducing reconciliation from hours of manual checks to minutes. Implemented stage-specific validation, API orchestration, and a manual-review queue for mismatched records, routing exceptions for human review.",
+            "Designed Celery-based task orchestration with each reconciliation stage executed as a separate task, configurable retries for recoverable failures, and failure isolation to prevent bad records from blocking batch processing.",
+            "Implemented shared API quota enforcement for services used by multiple internal teams, combining cached usage limits with counters distributed across 10 database rows to reduce contention on a single hot row.",
+            "Built parallel geospatial processing pipelines that partition thousands of grid cells into non-overlapping chunks across multiple workers, preventing duplicate processing during large backfills.",
+            "Developed data pipelines to synchronize geospatial parameters from external APIs and Google datasets across platform database tables.",
+            "Led development of a Django + React farm-digitization platform, automating farm-boundary capture through GPS-guided, landmark-based workflows and geospatial validation.",
+            "Built a FastAPI + React image-annotation platform supporting approximately 20 concurrent annotators, storing images and labels in AWS S3 and a database to produce a ground-truth dataset of approximately 7,000 images.",
           ],
           color: "#0879bf",
         },
